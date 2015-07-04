@@ -157,7 +157,8 @@ class DeviceControllerStrip(ButtonSliderElement):
 			if self._value >=self._value_map[index]*self._range+self._min:
 				v[index]=GREEN_FULL
 			else:
-				v[index]=GREEN_THIRD
+				# v[index]=GREEN_THIRD
+				v[index]=LED_OFF # Lokua
 		self._update_buttons(tuple(v))
 		
 	def _update_precision_slider(self):
